@@ -27,6 +27,7 @@ import { useThemeStore } from '@/store/theme-store';
 import { useAuthStore } from '@/store/auth-store';
 import { Button } from '@/components/ui/Button';
 
+
 export default function AccountScreen() {
   const router = useRouter();
   const colors = useThemeStore(state => state.colors);

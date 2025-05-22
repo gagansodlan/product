@@ -9,7 +9,7 @@ export const Client = {
       password: params.password,
     }),
 
-  login: (params: { login: string; password: string }) =>
+  login: (params: { username: string; password: string }) =>
     api.post("auth/signin", params),
 
   getProfile: () => api.get("/wp-json/wp/v2/users/me"),

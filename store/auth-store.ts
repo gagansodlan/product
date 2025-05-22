@@ -29,7 +29,7 @@ export const useAuthStore = create<AuthState>()(
         set({ isLoading: true, error: null });
      
         try {
-          const res = await Client.login({ login: email, password }); 
+          const res = await Client.login({ username: email, password }); 
           console.log("res",res.data.data)
           const { token, user_id } = res.data.data; 
       
